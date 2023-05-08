@@ -15,7 +15,7 @@ namespace Evaluation_Manager.model {
         public string LastName { get; set; }
         public override string ToString() {
 
-            ReturnMessage FirstName + " " + LastName;
+            return FirstName + " " + LastName;
         }
         
     }

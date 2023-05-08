@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Evaluation_Manager.Repositories {
-    public class StudentRepository 
+    public static class StudentRepository 
         {
         public static Student GetStudent(int id)
             {
@@ -36,39 +36,25 @@ namespace Evaluation_Manager.Repositories {
                 {
                 Student student = CreateObject(reader);
                 students.Add(student);
-
-
-
             }
             reader.Close();
             DB.CloseConnection();
+
             return students;
-
-
-
         }
         private static Student CreateObject(SqlDataReader reader) {
             int id = int.Parse(reader["Id"].ToString());
-            string FirstName = reader["FirstName"].ToString();
-            string LastName = reader["LastName"].ToString();
+            string firstName = reader["FirstName"].ToString();
+            string lastName = reader["LastName"].ToString();
             int.TryParse(reader["Grade"].ToString(), out int grade);
 
             var student = new Student {
-
-                Id = id;
-            firstName = firstName;
-            lastName = LastName;
-            grade = Grade;
-
-        };
-        ReturnMessage student;
-
-
-
-
-
-
-                }
-                
+                Id = id,
+                FirstName = firstName,
+                LastName = lastName,
+                Grade = grade,
+            };
+            return student;
+        }        
     }
 }
