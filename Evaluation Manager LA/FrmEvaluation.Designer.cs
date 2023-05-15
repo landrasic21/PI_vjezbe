@@ -136,6 +136,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Odustani";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // numPoints
             // 
