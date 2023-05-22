@@ -17,7 +17,7 @@ namespace Evaluation_Manager
         //string username = "nastavnik";
         //string password = "test";
 
-        public static Teacher LoggedTeacher { get; set; };
+        public static Teacher LoggedTeacher { get; set; }
 
 
         public FrmLogin()
