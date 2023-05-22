@@ -72,6 +72,7 @@
     <Compile Include="model\Evaluation.cs" />
     <Compile Include="model\Person.cs" />
     <Compile Include="model\Student.cs" />
+    <Compile Include="model\StudentReportView.cs" />
     <Compile Include="model\Teacher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
