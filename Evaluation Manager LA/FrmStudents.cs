@@ -42,6 +42,9 @@ namespace Evaluation_Manager
             }
         }
 
-        
+        private void btnGenerateReport_Click(object sender, EventArgs e) {
+            var form = new FrmFinalReport();
+            form.ShowDialog();
+        }
     }
 }
